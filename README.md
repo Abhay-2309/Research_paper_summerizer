@@ -106,12 +106,8 @@ research-tool/
 ├── app.py                 # Main Flask application
 ├── templates/
 │   └── index.html        # Frontend UI template
-├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
 ├── requirements.txt       # Python dependencies
-├── .env.example          # Environment variables template
+├── .env                 # Environment variables template
 ├── .gitignore           # Git ignore file
 └── README.md            # This file
 ```
@@ -152,62 +148,11 @@ The UI uses modern CSS with:
   }
   ```
 
-## 🔀 Alternative Setups
-
-### Option 1: Streamlit Version
-
-```bash
-# Install Streamlit
-pip install streamlit
-
-# Run Streamlit app
-streamlit run streamlit_app.py
-```
-
-### Option 2: Standalone HTML
+### Standalone HTML
 
 1. Save `index.html` from templates
 2. Modify JavaScript to use your API endpoint
 3. Open directly in browser
-
-## 🚀 Deployment
-
-### Heroku Deployment
-
-1. **Create Heroku app**
-   ```bash
-   heroku create your-app-name
-   ```
-
-2. **Set environment variables**
-   ```bash
-   heroku config:set GOOGLE_API_KEY=your_api_key
-   ```
-
-3. **Deploy**
-   ```bash
-   git push heroku main
-   ```
-
-### Docker Deployment
-
-```dockerfile
-FROM python:3.9-slim
-
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
-COPY . .
-EXPOSE 5000
-
-CMD ["python", "app.py"]
-```
-
-```bash
-docker build -t research-tool .
-docker run -p 5000:5000 research-tool
-```
 
 ## 🧪 Testing
 
@@ -287,14 +232,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-## 🆘 Support
-
-- **Documentation**: [Project Wiki](https://github.com/yourusername/research-tool/wiki)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/research-tool/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/research-tool/discussions)
-- **Email**: support@researchtool.com
-
 ## 📈 Roadmap
 
 ### Version 2.0 (Coming Soon)
@@ -321,14 +258,6 @@ SOFTWARE.
 - **LangChain**: For the excellent AI framework
 - **Flask**: For the lightweight web framework
 - **Research Community**: For inspiring this project
-
-## 📞 Contact
-
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
-- **LinkedIn**: [Your Name](https://linkedin.com/in/yourname)
-- **Website**: [yourwebsite.com](https://yourwebsite.com)
-
 ---
 
 <div align="center">
